@@ -1,0 +1,5 @@
+homepage - too much offers , wish list
+searching page - need to add saperate scrolling for filter
+product page - no comparision metaphore. Description is too long at starting.
+	suggesting other product on this product page in middle.
+	
