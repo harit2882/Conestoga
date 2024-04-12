@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Order Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Pizza Order Details</h1>
+  <form id="pizzaForm">
+    <fieldset>
+
+      <legend>Pizza Details</legend>
+      
+      <label for="pizzaCount">Number of Pizzas:</label>
+      <input type="number" id="pizzaCount" name="pizzaCount" min="1" required><br><br>
+      
+      <label for="pizzaSize">Pizza Size:</label>
+      <select id="pizzaSize" name="pizzaSize" required>
+        <option value="" disabled selected hidden>Select Size</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select><br><br>
+      
+      <label for="doughCategory" class="bold-label">Dough Type:</label>
+      <input type="text" id="doughCategory" name="doughCategory" required><br><br>
+      
+      <label for="sauceCategory">Sauce Type:</label>
+      <input type="text" id="sauceCategory" name="sauceCategory" required><br><br>
+      
+      <label for="baseCategory">Base Cheese:</label>
+      <input type="text" id="baseCategory" name="baseCategory" required><br><br>
+      
+      <label for="topping">Toppings:</label>
+      <input type="text" id="topping" name="topping " required><br><br>
+    </fieldset>
+
+    <fieldset>
+
+      <legend>User Information</legend>
+      
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required><br><br>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required><br><br>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      
+      <label for="streetName">Street Name:</label>
+      <input type="text" id="streetName" name="streetName" required><br><br>
+
+      <label for="streetNumber">Street Number:</label>
+      <input type="text" id="streetNumber" name="streetNumber" required><br><br>
+
+    </fieldset>
+    
+    <input type="submit" value="Submit Order">
+
+  </form>
+
+</body>
+
+</html>

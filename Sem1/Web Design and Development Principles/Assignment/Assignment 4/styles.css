@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 18px;
+}
+
+.main-div{
+    width: 500px;
+    height: 400px;
+}
+
+.header {
+    background-color: #fce4d6;
+    height: 15%;
+    border: 1px solid;
+}
+
+.footer {
+    background-color: #fff2cc;
+    height: 7.5%;
+    border: 1px solid;
+}
+
+.sidebar {
+    background-color: #e2efda;
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.row {
+     height: 70%;
+}
+
+.main-content {
+    background-color: #ddebf7;
+    float: left;
+    width: 80%;
+    height: 100%;
+    border-right: 1px solid;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #4800ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.checkbox-style input[type="checkbox"],
+.checkbox-style label {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: normal;
+}

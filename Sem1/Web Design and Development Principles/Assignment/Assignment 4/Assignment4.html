@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function isNameValidation() {
+            const getFirstName = document.getElementById('firstName').value;
+            const getLastName = document.getElementById('lastName').value;
+
+            if (getFirstName.length < 2 || getLastName.length < 2) {
+                alert('First & Last name minimum of two characters required.');
+                return false;
+            }
+            return true;
+        }
+
+        function isStreetNameValidate() {
+            const getStreetName = document.getElementById('streetName').value;
+
+            if (getStreetName === '') {
+                alert('Please enter street name.');
+                return false;
+            }
+            return true;
+        }
+
+        function isStreetNumberValidate() {
+            const getStreetNumber = document.getElementById('streetNumber').value;
+
+            if (getStreetNumber === '') {
+                alert('Please enter street number.');
+                return false;
+            }
+            return true;
+        }
+
+        function isEmailValidation() {
+            const email = document.getElementById('email').value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+            return true;
+        }
+
+        function isPhoneNumberValidation() {
+            const phone = document.getElementById('phone').value;
+            const phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+
+            if (!phoneRegex.test(phone)) {
+                alert('Please enter a valid phone number format(999-999-9999).');
+                return false;
+            }
+            return true;
+        }
+
+        function validatePizzaDetails() {
+            const pizzaCount = document.getElementById('pizzaCount').value;
+
+            if (pizzaCount <= 0 || pizzaCount >= 10) {
+                alert('Number of pizzas must be between 1 and 9.');
+                return false;
+            }
+            return true;
+        }
+
+        function validateForm(event) {
+            event.preventDefault();
+
+            if (validatePizzaDetails() && isNameValidation() && isEmailValidation() && isPhoneNumberValidation() && isStreetNameValidate() && isStreetNumberValidate()) {
+                alert('Order submitted successfully');
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Pizza Order Details</h1>
+    <form onsubmit="validateForm(event)">
+        <fieldset>
+
+            <legend>Pizza Details</legend>
+
+            <label for="pizzaCount">Number of Pizzas:</label>
+            <input type="number" id="pizzaCount" name="pizzaCount" min="1"><br><br>
+
+            <label for="pizzaSize">Pizza Size:</label>
+            <select id="pizzaSize" name="pizzaSize" required>
+                <option value="" disabled selected hidden>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extraLarge">Extra Large</option>
+            </select><br><br>
+
+            <label for="doughCategory">Dough Type:</label>
+            <select id="doughCategory" name="doughCategory" required>
+                <option value="" disabled selected hidden>Select Dough Type</option>
+                <option value="type1">Poolish Pizza</option>
+                <option value="type2">Neapolitan Pizza</option>
+                <option value="type3">Fermented Pizza</option>
+                <option value="type4">Biga Pizza</option>
+                <option value="type5">Poolish Pizza</option>
+                <option value="type6">Sourdough Pizza</option>
+                <option value="type7">Gluten Pizza</option>
+                <option value="type8">Detroit Pizza</option>
+            </select><br><br>
+
+            <label for="sauceCategory">Sauce Type:</label>
+            <select id="sauceCategory" name="sauceCategory" required>
+                <option value="" disabled selected hidden>Select Sauce Type</option>
+                <option value="type1">home-style Italian tomato</option>
+                <option value="type2">buffalo blue cheese</option>
+                <option value="type3">creamy garlic</option>
+                <option value="type4">chipotle</option>
+                <option value="type5">pesto</option>
+                <option value="type6">spicy</option>
+                <option value="type7">sweet chilli Thai</option>
+                <option value="type8">tandoori</option>
+                <option value="type9">Texas</option>
+                <option value="type10">no sauce</option>
+            </select><br><br>
+
+            <label for="baseCategory">Base Cheese:</label>
+            <select id="baseCategory" name="baseCategory" required>
+                <option value="" disabled selected hidden>Select Base Cheese</option>
+                <option value="type1">mozzarella</option>
+                <option value="type2"> dairy-free</option>
+                <option value="type3">four cheese blend</option>
+                <option value="type4">no cheese</option>
+            </select><br><br>
+
+            <label>Toppings:</label>
+
+            <div class="checkbox-style">
+                <input type="checkbox" id="cb1" name="cb1">
+                <label for="cb1">anchovies</label>
+
+                <input type="checkbox" id="cb2" name="cb2">
+                <label for="cb2">artichokes</label>
+
+                <input type="checkbox" id="cb3" name="cb3">
+                <label for="cb3">bacon strips</label>
+
+                <input type="checkbox" id="cb4" name="cb4">
+                <label for="cb4">broccoli</label>
+
+                <input type="checkbox" id="cb5" name="cb5">
+                <label for="cb5">bruschetta</label>
+
+            </div>
+
+            <div class="checkbox-style">  
+                <input type="checkbox" id="cb6" name="cb6">
+                <label for="cb6">buffalo chicken</label>
+              
+                <input type="checkbox" id="cb7" name="cb7">
+                <label for="cb7">caramelized onions</label>
+      
+                <input type="checkbox" id="cb8" name="cb8">
+                <label for="cb8">cilantro</label>
+
+                <input type="checkbox" id="cb9" name="cb9">
+                <label for="cb9">chipotle chicken</label>
+            </div>
+
+              <div class="checkbox-style">  
+                <input type="checkbox" id="cb10" name="cb10">
+                <label for="cb10">green peppers</label>
+              
+                <input type="checkbox" id="cb11" name="cb11">
+                <label for="cb11">grilled chicken</label>
+      
+                <input type="checkbox" id="cb12" name="cb12">
+                <label for="cb12">grilled zucchini</label>
+
+                <input type="checkbox" id="cb13" name="cb13">
+                <label for="cb13">ground beef</label>
+              </div>
+
+              <div class="checkbox-style">  
+                <input type="checkbox" id="cb14" name="cb14">
+                <label for="cb14">hot banana peppers</label>
+              
+                <input type="checkbox" id="cb15" name="cb15">
+                <label for="cb15">Italian ham</label>
+      
+                <input type="checkbox" id="cb16" name="cb16">
+                <label for="cb16">jalapeno peppers</label>
+
+                <input type="checkbox" id="cb17" name="cb17">
+                <label for="cb17">kalamata olives</label>
+              </div>
+
+              
+              <div class="checkbox-style">  
+                <input type="checkbox" id="cb18" name="cb18">
+                <label for="cb18">mushrooms</label>
+              
+                <input type="checkbox" id="cb19" name="cb19">
+                <label for="cb19">New York style pepperoni</label>
+      
+                <input type="checkbox" id="cb20" name="cb20">
+                <label for="cb20">pepperoni</label>
+
+                <input type="checkbox" id="cb21" name="cb21">
+                <label for="cb21">pineapple</label>
+              </div>
+
+              <div class="checkbox-style">  
+                <input type="checkbox" id="cb22" name="cb22">
+                <label for="cb22">plant-based chorizo crumble</label>
+              
+                <input type="checkbox" id="cb23" name="cb23">
+                <label for="cb23">plant-based pepperoni</label>
+      
+                <input type="checkbox" id="cb24" name="cb24">
+                <label for="cb24">red onions</label>
+
+                <input type="checkbox" id="cb25" name="cb25">
+                <label for="cb25">roasted garlic</label>
+              </div>
+
+              <div class="checkbox-style">  
+                <input type="checkbox" id="cb26" name="cb26">
+                <label for="cb26">Roma tomatoes</label>
+              
+                <input type="checkbox" id="cb27" name="cb27">
+                <label for="cb27">salami</label>
+      
+                <input type="checkbox" id="cb28" name="cb28">
+                <label for="cb28">spicy Italian sausage</label>
+
+                <input type="checkbox" id="cb29" name="cb29">
+                <label for="cb29">steak strips</label>
+              </div>
+
+              <div class="checkbox-style">  
+                <input type="checkbox" id="cb30" name="cb30">
+                <label for="cb30">spinach</label>
+              
+                <input type="checkbox" id="cb31" name="cb31">
+                <label for="cb31">sun-dried tomatoes</label>
+
+                <input type="checkbox" id="cb32" name="cb32">
+                <label for="cb32">chipotle steak</label>
+              
+                <input type="checkbox" id="cb33" name="cb33">
+                <label for="cb33">chorizo sausage</label>
+
+              </div>
+
+
+              <div class="checkbox-style">  
+      
+                <input type="checkbox" id="cb34" name="cb34">
+                <label for="cb34">fire-roasted red peppers</label>
+
+                <input type="checkbox" id="cb35" name="cb35">
+                <label for="cb35">green olives</label>
+              </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>User Information</legend>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="streetName">Street Name:</label>
+            <input type="text" id="streetName" name="streetName"><br><br>
+
+            <label for="streetNumber">Street Number:</label>
+            <input type="text" id="streetNumber" name="streetNumber"><br><br>
+
+        </fieldset>
+
+        <input type="submit" value="Submit Order">
+
+    </form>
+
+</body>
+
+</html>
