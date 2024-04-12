@@ -1,0 +1,14 @@
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\bin\Debug\net7.0\Assignment 2.exe
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\bin\Debug\net7.0\Assignment 2.deps.json
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\bin\Debug\net7.0\Assignment 2.runtimeconfig.json
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\bin\Debug\net7.0\Assignment 2.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\bin\Debug\net7.0\Assignment 2.pdb
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\Assignment 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\Assignment 2.AssemblyInfoInputs.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\Assignment 2.AssemblyInfo.cs
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\Assignment 2.csproj.CoreCompileInputs.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\Assignment 2.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\refint\Assignment 2.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\Assignment 2.pdb
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\Assignment 2.genruntimeconfig.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\Assignment\Assignment 2\obj\Debug\net7.0\ref\Assignment 2.dll

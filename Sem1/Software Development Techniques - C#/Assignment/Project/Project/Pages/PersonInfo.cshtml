@@ -1,0 +1,84 @@
+@page
+@model Project.Pages.PersonInfo
+@{
+    ViewData["Title"] = "Person Info";
+}
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    
+    <body>
+        <h1>Person Information</h1>
+        <!-- All Form Field -->
+        <form method="post" style="width: 50%;">
+
+            <!-- First Name -->
+            <div class="form-group">
+                <label asp-for="person.FirstName"></label>
+                <input asp-for="person.FirstName" class="form-control" type="text" required />
+                <span asp-validation-for="person.FirstName" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- Last Name -->
+            <div class="form-group">
+                <label asp-for="person.LastName"></label>
+                <input asp-for="person.LastName" class="form-control" type="text" required />
+                <span asp-validation-for="person.LastName" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label asp-for="person.DateOfBirth"></label>
+                <input asp-for="person.DateOfBirth" class="form-control" type="date" required />
+                <span asp-validation-for="person.DateOfBirth" class="text-danger"></span>
+            </div>
+
+            <br>
+            
+            <!-- Address -->
+            <div class="form-group">
+                <label asp-for="person.Address"></label>
+                <input asp-for="person.Address" class="form-control" type="text" required />
+                <span asp-validation-for="person.Address" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- City -->
+            <div class="form-group">
+                <label asp-for="person.City"></label>
+                <input asp-for="person.City" class="form-control" type="text" required />
+                <span asp-validation-for="person.City" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- Province -->
+            <div class="form-group">
+                <label asp-for="person.Province"></label>
+                <input asp-for="person.Province" class="form-control" type="text" required />
+                <span asp-validation-for="person.Province" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- Country -->
+            <div class="form-group">
+                <label asp-for="person.Country"></label>
+                <input asp-for="person.Country" class="form-control" type="text" required />
+                <span asp-validation-for="person.Country" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- Save Button to Send Data On Person Added Page -->
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+
+    </body>
+</html>

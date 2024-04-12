@@ -1,0 +1,7 @@
+{
+    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "csharp.suppressProjectJsonWarning": true
+}

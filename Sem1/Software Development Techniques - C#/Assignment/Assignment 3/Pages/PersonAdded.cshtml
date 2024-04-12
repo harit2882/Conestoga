@@ -1,0 +1,80 @@
+@page
+@model PersonAdded
+@{
+    ViewData["Title"] = "Person Added";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="container">
+        <!-- First Name -->
+        <div class="row">
+            <div class="col-sm-4">
+                <p><strong>First Name:</strong></p>
+            </div>
+            <div class="col-sm-8">
+                <p>@Model.person.FirstName</p>
+            </div>
+        </div>
+
+        <!-- Last Name -->
+        <div class="row">
+            <div class="col-sm-4">
+                <p><strong>Last Name:</strong></p>
+            </div>
+            <div class="col-sm-8">
+                <p>@Model.person.LastName</p>
+            </div>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="row">
+            <div class="col-sm-4">
+                <p><strong>Date of Birth:</strong></p>
+            </div>
+            <div class="col-sm-8">
+                <p>@Model.person.DateOfBirth?.ToString("yyyy-MM-dd")</p>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="row">
+            <div class="col-sm-4">
+                <p><strong>Address:</strong></p>
+            </div>
+            <div class="col-sm-8">
+                <p>@Model.person.Address</p>
+            </div>
+        </div>
+
+        <!-- City -->
+        <div class="row">
+            <div class="col-sm-4">
+                <p><strong>City:</strong></p>
+            </div>
+            <div class="col-sm-8">
+                <p>@Model.person.City</p>
+            </div>
+        </div>
+
+        <!-- Province -->
+        <div class="row">
+            <div class="col-sm-4">
+                <p><strong>Province:</strong></p>
+            </div>
+            <div class="col-sm-8">
+                <p>@Model.person.Province</p>
+            </div>
+        </div>
+
+        <!-- Country -->
+        <div class="row">
+            <div class="col-sm-4">
+                <p><strong>Country:</strong></p>
+            </div>
+            <div class="col-sm-8">
+                <p>@Model.person.Country</p>
+            </div>
+        </div>
+
+    </div>
+</div>
