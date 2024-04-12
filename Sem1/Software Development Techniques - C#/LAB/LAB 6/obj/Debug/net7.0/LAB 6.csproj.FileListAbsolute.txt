@@ -1,0 +1,14 @@
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\bin\Debug\net7.0\LAB 6.exe
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\bin\Debug\net7.0\LAB 6.deps.json
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\bin\Debug\net7.0\LAB 6.runtimeconfig.json
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\bin\Debug\net7.0\LAB 6.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\bin\Debug\net7.0\LAB 6.pdb
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\LAB 6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\LAB 6.AssemblyInfoInputs.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\LAB 6.AssemblyInfo.cs
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\LAB 6.csproj.CoreCompileInputs.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\LAB 6.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\refint\LAB 6.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\LAB 6.pdb
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\LAB 6.genruntimeconfig.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 6\obj\Debug\net7.0\ref\LAB 6.dll

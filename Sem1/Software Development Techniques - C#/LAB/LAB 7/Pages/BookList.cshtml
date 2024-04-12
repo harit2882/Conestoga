@@ -1,0 +1,39 @@
+@page
+@model BookList
+@{
+    ViewData["Title"] = "Book List";
+}
+
+<h2>Book List</h2>
+
+<table>
+  <tr>
+    <th>Book Name</th>
+    <th>Book Author</th>
+    <th>Book Information</th>
+  </tr>
+    @if(Model.bookList != null){
+        @foreach (var book in Model.bookList.Take(10))
+        {
+            <tr>
+                <th>@book.title</th>
+                <th>@book.author</th>
+                <th>
+                    <form method="post">
+                        <input asp-for="@book.title" type="hidden" />
+                        <input asp-for="@book.author" type="hidden" />
+                        <input asp-for="@book.country" type="hidden" />
+                        <input asp-for="@book.imageLink" type="hidden" />
+                        <input asp-for="@book.language" type="hidden" />
+                        <input asp-for="@book.pages" type="hidden" />
+                        <input asp-for="@book.year" type="hidden" />
+                        <button type="submit">Get Details</button>
+                    </form>
+                </th>
+            </tr>
+        }
+    }else{
+        <tr>No Books Found</tr>
+    } 
+
+</table>

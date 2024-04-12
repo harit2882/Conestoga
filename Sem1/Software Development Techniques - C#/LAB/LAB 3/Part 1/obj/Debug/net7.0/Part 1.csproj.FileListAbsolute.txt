@@ -1,0 +1,14 @@
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\bin\Debug\net7.0\Part 1.exe
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\bin\Debug\net7.0\Part 1.deps.json
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\bin\Debug\net7.0\Part 1.runtimeconfig.json
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\bin\Debug\net7.0\Part 1.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\bin\Debug\net7.0\Part 1.pdb
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\Part 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\Part 1.AssemblyInfoInputs.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\Part 1.AssemblyInfo.cs
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\Part 1.csproj.CoreCompileInputs.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\Part 1.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\refint\Part 1.dll
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\Part 1.pdb
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\Part 1.genruntimeconfig.cache
+C:\Users\thori\OneDrive\Desktop\Conestoga\Sem 1\Software Development Technique\LAB Assignment\LAB 3\Part 1\obj\Debug\net7.0\ref\Part 1.dll
