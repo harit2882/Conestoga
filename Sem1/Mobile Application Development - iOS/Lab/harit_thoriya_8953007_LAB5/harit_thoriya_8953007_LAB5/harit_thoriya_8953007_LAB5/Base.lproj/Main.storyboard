@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hx4-0x-2ZJ">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="harit_thoriya_8953007_LAB5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryApp" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-ma-RSp">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImagiStory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruu-IQ-rZ6">
+                                <rect key="frame" x="98.000000000000014" y="91" width="194.33333333333337" height="50.333333333333343"/>
+                                <color key="tintColor" red="0.66828322409999996" green="0.84233516450000001" blue="0.89020466799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="42"/>
+                                <color key="textColor" red="0.14350392805617912" green="0.56223324646161521" blue="0.81080491084225192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5X-KO-FZ3">
+                                <rect key="frame" x="310" y="764" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="dXS-cm-fMn"/>
+                                    <constraint firstAttribute="height" constant="50" id="xq3-sZ-Q4p"/>
+                                </constraints>
+                                <color key="tintColor" red="0.2516182065" green="0.56395912169999995" blue="0.80787187810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="i"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.2516182065" green="0.56395912169999995" blue="0.80787187810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pFI-v6-VAo" kind="show" id="QBW-XN-pTs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-1J-ibe">
+                                <rect key="frame" x="145" y="519.66666666666663" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Level 1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="gee-PP-1A9" kind="show" id="HMr-5B-UZs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS2-g4-9dM">
+                                <rect key="frame" x="145" y="574.66666666666663" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Level 2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="B9h-oT-tDT" kind="show" id="CLY-U9-76X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="c5X-KO-FZ3" secondAttribute="bottom" constant="30" id="Rg9-LU-PyH"/>
+                            <constraint firstItem="Ruu-IQ-rZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y1r-Pt-TD0"/>
+                            <constraint firstItem="Ruu-IQ-rZ6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bux-D7-sNy"/>
+                            <constraint firstAttribute="trailing" secondItem="c5X-KO-FZ3" secondAttribute="trailing" constant="30" id="xCg-GL-YDM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kE1-dF-Y0m"/>
+                    <connections>
+                        <outlet property="informationButton" destination="c5X-KO-FZ3" id="FKL-tG-U6s"/>
+                        <outlet property="level1Button" destination="YjS-1J-ibe" id="i1u-ev-sWX"/>
+                        <outlet property="level2Button" destination="IS2-g4-9dM" id="UlA-fZ-jqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41.53846153846154" y="3.5545023696682461"/>
+        </scene>
+        <!--Level1-->
+        <scene sceneID="amp-Oh-ymT">
+            <objects>
+                <viewController id="gee-PP-1A9" customClass="Level1" customModule="harit_thoriya_8953007_LAB5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZoB-WR-LHM">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="F4f-MN-MO6">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4b-H7-3oI">
+                                <rect key="frame" x="145" y="374" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="PUn-mr-VTB"/>
+                                    <constraint firstAttribute="width" constant="100" id="STm-19-CfV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Night Boy"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kSy-3r-Bhs" kind="show" id="4Yc-8P-FMS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aF-dT-qZf">
+                                <rect key="frame" x="134.66666666666666" y="101" width="121" height="43"/>
+                                <color key="tintColor" red="0.66828322409999996" green="0.84233516450000001" blue="0.89020466799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.26721718452115095" green="0.66405898330000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b2-Kr-5fw">
+                                <rect key="frame" x="143.33333333333334" y="434" width="103.33333333333334" height="35"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Goldilocks"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Mys-mj-ZCL" kind="show" id="MGW-eU-Cva"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6HU-Cn-gAh"/>
+                        <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="v4b-H7-3oI" firstAttribute="centerX" secondItem="ZoB-WR-LHM" secondAttribute="centerX" id="7LU-r4-jJ1"/>
+                            <constraint firstItem="v4b-H7-3oI" firstAttribute="top" secondItem="1aF-dT-qZf" secondAttribute="bottom" constant="230" id="8Kh-iI-UO6"/>
+                            <constraint firstItem="9b2-Kr-5fw" firstAttribute="top" secondItem="v4b-H7-3oI" secondAttribute="bottom" constant="25" id="GY4-wt-YWa"/>
+                            <constraint firstItem="1aF-dT-qZf" firstAttribute="centerX" secondItem="ZoB-WR-LHM" secondAttribute="centerX" id="HqL-kG-T8n"/>
+                            <constraint firstItem="F4f-MN-MO6" firstAttribute="leading" secondItem="ZoB-WR-LHM" secondAttribute="leading" id="KDc-dt-cnZ"/>
+                            <constraint firstItem="9b2-Kr-5fw" firstAttribute="centerX" secondItem="ZoB-WR-LHM" secondAttribute="centerX" id="Kkq-bq-Otx"/>
+                            <constraint firstAttribute="trailing" secondItem="F4f-MN-MO6" secondAttribute="trailing" id="Lm9-m9-J0e"/>
+                            <constraint firstItem="1aF-dT-qZf" firstAttribute="top" secondItem="6HU-Cn-gAh" secondAttribute="top" constant="10" id="Tf1-Pf-6lm"/>
+                            <constraint firstAttribute="bottom" secondItem="F4f-MN-MO6" secondAttribute="bottom" id="WOx-2s-3ux"/>
+                            <constraint firstAttribute="trailing" secondItem="F4f-MN-MO6" secondAttribute="trailing" id="csU-VD-lHO"/>
+                            <constraint firstItem="F4f-MN-MO6" firstAttribute="top" secondItem="ZoB-WR-LHM" secondAttribute="top" id="i0s-tg-4Md"/>
+                            <constraint firstItem="v4b-H7-3oI" firstAttribute="centerX" secondItem="ZoB-WR-LHM" secondAttribute="centerX" id="kRi-Mx-4Zi"/>
+                            <constraint firstAttribute="bottom" secondItem="F4f-MN-MO6" secondAttribute="bottom" id="o0a-ti-Sba"/>
+                            <constraint firstItem="F4f-MN-MO6" firstAttribute="top" secondItem="ZoB-WR-LHM" secondAttribute="top" id="ubg-fR-DCD"/>
+                            <constraint firstItem="F4f-MN-MO6" firstAttribute="leading" secondItem="ZoB-WR-LHM" secondAttribute="leading" id="ySe-b8-kgB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xge-ry-ZjZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JA6-Nt-TA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790.76923076923072" y="3.5545023696682461"/>
+        </scene>
+        <!--Goldilocks-->
+        <scene sceneID="1hi-cQ-nAg">
+            <objects>
+                <viewController id="Mys-mj-ZCL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="okz-P0-QkD">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Goldilocks" translatesAutoresizingMaskIntoConstraints="NO" id="DLR-er-Ehu">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p4V-Gm-YuP">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <mutableString key="text">Goldilocks went out for a walk. She came upon the Three Bears’ home. Feeling hungry and oh so tired, she was all alone. She smelled some porridge, so the story goes. She tried the Papa Bear’s bowl, the Mama Bear’s bowl, and the Baby Bear’s bowl. She said it was . . . too hot, it was . . . too cold, it was . . . just right, so she ate it all. She ate it all from the Baby Bear’s bowl. Goldilocks, what were you thinkin’? The Three Bears’ house is no place to be in. Jump up, turn around, and run home now. Ooo-oo-ooh, Goldilocks! I think I hear the Three Bears’ growl! Goldilocks was ready to rest. She came upon the Three Bears’ chairs. Feeling full from the yummy porridge made by Mama Bear. She tried the chairs out, so the story goes. She tried the Papa Bear’s chair, the Mama Bear’s chair, and the Baby Bear’s chair. She said it was . . . too hard, it was . . . too soft, it was . . . just right, so she sat right there. She sat right there. Broke the Baby Bear’s chair! Goldilocks, what were you thinkin’? The Three Bears’ house is no place to be in. Jump up, turn around, and run home now. Ooo-oo-ooh, Goldilocks! I think I hear the Three Bears’ growl! Goldilocks was ready to nap. She came upon the Three Bears’ beds. Feeling tired from the walk in the woods she was ready to lay her head. She tried the beds out, so the story goes. She tried the Papa Bear’s bed, the Mama Bear’s bed, and the Baby Bear’s bed. She said it was . . . too hard, it was . . . too soft, it was . . . just right so she laid her head. She laid her head on the Baby Bear’s bed. (Then the BEARS CAME HOME and the Baby said) Someone’s eaten up my porridge. Someone’s broken my chair. Someone’s sleeping in my bed, and she’s right there! (And with that, Goldilocks woke up, jumped out of bed, and ran all the way home.) Goldilocks, what were you thinkin’? The Three Bears’ house is no place to be in. Jump up, turn around, and run home now. Ooo-oo-ooh, Goldilocks! I think I hear the Three Bears’ growl! Goldilocks, what were you thinkin’? The Three Bears’ house is no place to be in. Jump up, turn around, and run home now. Ooo-oo-ooh, Goldilocks! (Goldilocks, Goldilocks) Oh, Goldilocks. Oh, Goldilocks. I think I hear the Three Bears’ growl.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dFc-j1-8uc"/>
+                        <color key="backgroundColor" red="0.93670028449999998" green="0.98627263310000002" blue="0.83527249100000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="p4V-Gm-YuP" firstAttribute="top" secondItem="dFc-j1-8uc" secondAttribute="top" id="2OW-TW-GIv"/>
+                            <constraint firstItem="p4V-Gm-YuP" firstAttribute="bottom" secondItem="dFc-j1-8uc" secondAttribute="bottom" id="6td-Wd-tsx"/>
+                            <constraint firstItem="p4V-Gm-YuP" firstAttribute="trailing" secondItem="dFc-j1-8uc" secondAttribute="trailing" id="BLa-BD-lc4"/>
+                            <constraint firstItem="DLR-er-Ehu" firstAttribute="leading" secondItem="okz-P0-QkD" secondAttribute="leading" id="Dfh-Va-LYg"/>
+                            <constraint firstAttribute="trailing" secondItem="DLR-er-Ehu" secondAttribute="trailing" id="LAF-Si-2ih"/>
+                            <constraint firstItem="DLR-er-Ehu" firstAttribute="top" secondItem="okz-P0-QkD" secondAttribute="top" id="RKf-VV-FAr"/>
+                            <constraint firstAttribute="bottom" secondItem="DLR-er-Ehu" secondAttribute="bottom" id="n87-D0-fWX"/>
+                            <constraint firstItem="p4V-Gm-YuP" firstAttribute="leading" secondItem="dFc-j1-8uc" secondAttribute="leading" id="oFu-m8-Jkb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Goldilocks" id="MjH-1q-KtM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHC-33-gVg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="333"/>
+        </scene>
+        <!--Page 1-->
+        <scene sceneID="51P-24-FlJ">
+            <objects>
+                <viewController id="kSy-3r-Bhs" customClass="NightBoyPage1" customModule="harit_thoriya_8953007_LAB5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cAq-Pr-tPP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Night Boy" translatesAutoresizingMaskIntoConstraints="NO" id="6Dg-ef-X0I">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wIg-DP-a9z">
+                                <rect key="frame" x="0.0" y="91" width="390" height="699"/>
+                                <mutableString key="text">Night can’t sleep. He’s waiting to play his favorite game with his big sister, Day. “Be patient,” Day says. “It’s not dark yet. You can’t look for me until after sunset.” Night counts to ten, throws the moon way up high, and spreads out his blankie to darken the sky. “Come and find me!” Day calls. “As soon as you do, we’ll race back home, and then I’ll look for you.” Night searches one corner, and then in another. It’s hide-and-go-seek between sister and brother. “She must be in space,” Night says to his teddy. “We’ll find her. Let’s go. Our spaceship is ready.” Night loads up his comets and grabs his star sack. If Teddy gets hungry, he’s packed him a snack. Night pulls out the North Star, the great guiding light. It hangs in the sky, shining steady and bright. The spaceship takes off with a plug-your-ears boom and blasts into space with a hold-on-tight zoom. Teddy’s distracted. He just wants his snack. Milk and fresh cookies smell good in the back. A bump spills the milk. The milk turns to stars and Milky Way planets like Venus and Mars. Night opens his sack and scatters Orion, the hunter who holds the head of a lion. As Night paints with stars, many shapes fill his mind. He’s forgotten the sister he set out to find. The Big Dipper’s part of his cosmic creation.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4C-Ve-g5I">
+                                <rect key="frame" x="270" y="789" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7ia-tu-avL"/>
+                                    <constraint firstAttribute="height" constant="35" id="c2b-gf-E1X"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Pcx-GY-zYI" kind="show" id="e93-fX-YF3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pbO-RF-vOb"/>
+                        <color key="backgroundColor" red="0.5132273436" green="0.75048643349999999" blue="0.89413744210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="K4C-Ve-g5I" secondAttribute="bottom" constant="20" id="CfZ-q4-wuH"/>
+                            <constraint firstItem="6Dg-ef-X0I" firstAttribute="leading" secondItem="cAq-Pr-tPP" secondAttribute="leading" id="Nut-tZ-TYf"/>
+                            <constraint firstItem="wIg-DP-a9z" firstAttribute="trailing" secondItem="pbO-RF-vOb" secondAttribute="trailing" id="YW9-3Y-a6z"/>
+                            <constraint firstItem="wIg-DP-a9z" firstAttribute="leading" secondItem="pbO-RF-vOb" secondAttribute="leading" id="crV-oh-ONk"/>
+                            <constraint firstAttribute="trailing" secondItem="6Dg-ef-X0I" secondAttribute="trailing" id="eSe-eG-gje"/>
+                            <constraint firstAttribute="trailing" secondItem="K4C-Ve-g5I" secondAttribute="trailing" constant="20" id="m6n-SR-3ay"/>
+                            <constraint firstItem="wIg-DP-a9z" firstAttribute="top" secondItem="pbO-RF-vOb" secondAttribute="top" id="mu7-UB-PD6"/>
+                            <constraint firstItem="pbO-RF-vOb" firstAttribute="bottom" secondItem="wIg-DP-a9z" secondAttribute="bottom" constant="20" id="nfs-zF-IYs"/>
+                            <constraint firstItem="6Dg-ef-X0I" firstAttribute="top" secondItem="cAq-Pr-tPP" secondAttribute="top" id="tGS-QZ-Ahp"/>
+                            <constraint firstAttribute="bottom" secondItem="6Dg-ef-X0I" secondAttribute="bottom" id="tbY-f8-bY9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 1" id="d2r-z6-CMr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UF2-8a-3ii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596.9230769230769" y="-318.48341232227489"/>
+        </scene>
+        <!--Night Boy Page2-->
+        <scene sceneID="rHO-kT-CbB">
+            <objects>
+                <viewController id="Pcx-GY-zYI" customClass="NightBoyPage2" customModule="harit_thoriya_8953007_LAB5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UPV-se-I4E">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Night Boy" translatesAutoresizingMaskIntoConstraints="NO" id="2gS-sV-0zM">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-m7-wZ3">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <mutableString key="text">It twinkles. He sprinkles his next constellation. “That’s me in the sky!” Teddy points, and they stare. Around the Big Dipper he sees a Great Bear. Night star-paints a horse. They climb up and fly. On Pegasus’s back they ride through the sky. Like a prince, Night arrives at a star-spangled palace, swirling his cape of aurora borealis. He fires off comets; then a voice stops his show. It’s loud and commanding—a voice he should know. “Stop playing!” Day shouts from far across space. “I’ll meet you at home. Come on, it’s a race!” And that’s when he finally remembers their game. He forgot to find Day. Each night it’s the same! He buckles in Teddy and holds out the sack to gather his stars all the Milky Way back. They speed across space like a bright shooting star. Galaxing, galaxing, galaxing far. They crash to a stop. It’s still dark. Where is Day? Night’s all out of zoom. He’s too tired to play. Day laughs and appears in her bright yellow dress. “Don’t fall asleep yet. Let’s clean up this mess.” Night yawns as they tidy and asks, “Did I win?” Day nods. “But it’s bedtime. I’ll tuck you in. I’ll shine while you sleep.” Her voice is a song. “And when you wake up, we’ll play all night long.” Night snuggles with Teddy and struggles to say, “I can’t ever find you. I go the wrong way.” “Remember,” Day whispers, “it’s west you must go. I’m easy to find. I’m the star of the show.” “Head west in your spaceship. I really don’t hide. You just have to look on the Earth’s other side.” But Night’s fast asleep. He’s a prince in his bed. She shimmers a kiss. “Sweet dreams, sleepyhead.”</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="48e-hv-cX6"/>
+                        <color key="backgroundColor" red="0.51322704549999998" green="0.74649173020000004" blue="0.8941378593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2gS-sV-0zM" secondAttribute="bottom" id="9BD-MV-IAR"/>
+                            <constraint firstItem="Uhs-m7-wZ3" firstAttribute="leading" secondItem="48e-hv-cX6" secondAttribute="leading" id="9wS-AQ-pyM"/>
+                            <constraint firstAttribute="trailing" secondItem="2gS-sV-0zM" secondAttribute="trailing" id="CR3-0E-6OA"/>
+                            <constraint firstItem="2gS-sV-0zM" firstAttribute="leading" secondItem="UPV-se-I4E" secondAttribute="leading" id="HAH-Z9-16C"/>
+                            <constraint firstItem="48e-hv-cX6" firstAttribute="trailing" secondItem="Uhs-m7-wZ3" secondAttribute="trailing" id="VcR-rA-ViE"/>
+                            <constraint firstItem="Uhs-m7-wZ3" firstAttribute="top" secondItem="48e-hv-cX6" secondAttribute="top" id="YUf-qt-hJm"/>
+                            <constraint firstItem="48e-hv-cX6" firstAttribute="bottom" secondItem="Uhs-m7-wZ3" secondAttribute="bottom" id="v9u-0w-pRl"/>
+                            <constraint firstItem="2gS-sV-0zM" firstAttribute="top" secondItem="UPV-se-I4E" secondAttribute="top" id="yLA-iu-HLw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pu4-Jr-Zwh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZN-ZM-vJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2306" y="-318"/>
+        </scene>
+        <!--Level2-->
+        <scene sceneID="FuH-ox-icb">
+            <objects>
+                <viewController id="B9h-oT-tDT" customClass="Level2" customModule="harit_thoriya_8953007_LAB5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KEE-TN-sDu">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="7MW-lK-goU">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjB-7d-G7c">
+                                <rect key="frame" x="119.66666666666669" y="404.66666666666669" width="151" height="35"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The Little Mouse"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="eRx-Mn-Shy" kind="show" id="jEg-BE-KAO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vz5-NY-tG4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7MW-lK-goU" firstAttribute="leading" secondItem="KEE-TN-sDu" secondAttribute="leading" id="5XH-F6-FXX"/>
+                            <constraint firstAttribute="bottom" secondItem="7MW-lK-goU" secondAttribute="bottom" id="GW4-Pt-ZvQ"/>
+                            <constraint firstItem="7MW-lK-goU" firstAttribute="top" secondItem="KEE-TN-sDu" secondAttribute="top" id="LNH-jc-qe0"/>
+                            <constraint firstItem="GjB-7d-G7c" firstAttribute="centerX" secondItem="KEE-TN-sDu" secondAttribute="centerX" id="UEu-7n-eJg"/>
+                            <constraint firstAttribute="trailing" secondItem="7MW-lK-goU" secondAttribute="trailing" id="hrx-uq-CXN"/>
+                            <constraint firstItem="GjB-7d-G7c" firstAttribute="centerY" secondItem="KEE-TN-sDu" secondAttribute="centerY" id="p6B-t5-1Bq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5UR-NF-i4r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpo-to-QGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="898"/>
+        </scene>
+        <!--Page 1-->
+        <scene sceneID="L0x-hM-wwy">
+            <objects>
+                <viewController id="eRx-Mn-Shy" customClass="TheLitteMousePage1" customModule="harit_thoriya_8953007_LAB5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ueD-D8-zTw">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hickory Dickory Dock" translatesAutoresizingMaskIntoConstraints="NO" id="lUz-FT-AWh">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-4I-vDt">
+                                <rect key="frame" x="270" y="789" width="100" height="35"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="tH8-el-iEQ"/>
+                                    <constraint firstAttribute="height" constant="35" id="xmk-Eb-Irb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="sdZ-C2-ekq" kind="show" id="H2G-yU-Ydt"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lfl-qo-L35">
+                                <rect key="frame" x="0.0" y="91" width="390" height="693"/>
+                                <mutableString key="text">Once upon a time, there was a Baby Mouse and Mother Mouse. They lived in a hole in the skirting board in a big, warm house with lots of cheese to eat, where they wanted for nothing. Then, one day, Mother Mouse decided to take Baby Mouse outside of their home. Waiting outside for them was a huge ginger tomcat, licking its lips and waiting to eat them both up.
+
+“Mother, Mother! What should we do?” Cried Baby Mouse, clinging to his mother’s tail. Mother Mouse paused, staring up into the beady eyes of the hungry cat. But she wasn’t scared because she knew exactly how to deal with big, scary cats. She opened her mouth and took in a deep breath.“Mother, Mother! What should we do?” Cried Baby Mouse, clinging to his mother’s tail. Mother Mouse paused, staring up into the beady eyes of the hungry cat. But she wasn’t scared because she knew exactly how to deal with big, scary cats. She opened her mouth and took in a deep breath.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kX7-Cy-Jcf"/>
+                        <color key="backgroundColor" red="0.99461585279999998" green="0.97994989160000001" blue="0.68622332809999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="lfl-qo-L35" firstAttribute="top" secondItem="kX7-Cy-Jcf" secondAttribute="top" id="7hA-2E-TVS"/>
+                            <constraint firstItem="sz2-4I-vDt" firstAttribute="top" secondItem="lfl-qo-L35" secondAttribute="bottom" constant="5" id="AG4-Mf-uZg"/>
+                            <constraint firstAttribute="bottom" secondItem="lUz-FT-AWh" secondAttribute="bottom" id="BOI-vE-Ek2"/>
+                            <constraint firstItem="lfl-qo-L35" firstAttribute="trailing" secondItem="kX7-Cy-Jcf" secondAttribute="trailing" id="Pqs-ny-lN5"/>
+                            <constraint firstAttribute="trailing" secondItem="lUz-FT-AWh" secondAttribute="trailing" id="REG-sy-s4L"/>
+                            <constraint firstItem="lfl-qo-L35" firstAttribute="leading" secondItem="kX7-Cy-Jcf" secondAttribute="leading" id="aXB-Kp-8rW"/>
+                            <constraint firstItem="kX7-Cy-Jcf" firstAttribute="trailing" secondItem="sz2-4I-vDt" secondAttribute="trailing" constant="20" id="be3-dF-aTU"/>
+                            <constraint firstAttribute="bottom" secondItem="sz2-4I-vDt" secondAttribute="bottom" constant="20" id="cIL-Uf-SY2"/>
+                            <constraint firstItem="lUz-FT-AWh" firstAttribute="top" secondItem="ueD-D8-zTw" secondAttribute="top" id="dTh-RF-zQ6"/>
+                            <constraint firstItem="lUz-FT-AWh" firstAttribute="leading" secondItem="ueD-D8-zTw" secondAttribute="leading" id="tbk-89-Bvp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 1" id="j51-Ee-GfU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfh-Da-oXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="966"/>
+        </scene>
+        <!--The Little Mouse Page2-->
+        <scene sceneID="q6H-Qi-kiG">
+            <objects>
+                <viewController id="sdZ-C2-ekq" customClass="TheLittleMousePage2" customModule="harit_thoriya_8953007_LAB5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Wf-dG-XyK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hickory Dickory Dock" translatesAutoresizingMaskIntoConstraints="NO" id="8Ge-dZ-ePI">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cva-ck-nJi">
+                                <rect key="frame" x="10" y="91" width="370" height="753"/>
+                                <string key="text">
+“Woof! Woof! Bark bark bark!” She shouted, and the cat ran away as fast as he could.
+
+“Wow, Mother! That was amazing!” Baby Mouse said to his mother, smiling happily.
+
+“And that, my child, is why it is always best to have a second language.”
+
+Moral: It’s always good to have a second language.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FaI-Nq-ZoX"/>
+                        <color key="backgroundColor" red="0.99461585279999998" green="0.97994989160000001" blue="0.68622332809999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cva-ck-nJi" firstAttribute="top" secondItem="6Wf-dG-XyK" secondAttribute="top" constant="91" id="FaJ-ai-o1g"/>
+                            <constraint firstItem="8Ge-dZ-ePI" firstAttribute="leading" secondItem="FaI-Nq-ZoX" secondAttribute="leading" id="JVh-ex-lGq"/>
+                            <constraint firstItem="cva-ck-nJi" firstAttribute="leading" secondItem="FaI-Nq-ZoX" secondAttribute="leading" constant="10" id="Mef-GE-D0S"/>
+                            <constraint firstItem="FaI-Nq-ZoX" firstAttribute="trailing" secondItem="cva-ck-nJi" secondAttribute="trailing" constant="10" id="Ot9-Wl-amJ"/>
+                            <constraint firstAttribute="bottom" secondItem="cva-ck-nJi" secondAttribute="bottom" id="deh-ew-2tE"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ge-dZ-ePI" secondAttribute="bottom" id="hCt-3u-xL7"/>
+                            <constraint firstItem="FaI-Nq-ZoX" firstAttribute="trailing" secondItem="8Ge-dZ-ePI" secondAttribute="trailing" id="p7j-oD-iQy"/>
+                            <constraint firstItem="8Ge-dZ-ePI" firstAttribute="top" secondItem="6Wf-dG-XyK" secondAttribute="top" id="qFc-TP-zWK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dYp-YL-smd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pee-iQ-FD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="969"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="uHX-we-MsY">
+            <objects>
+                <viewController id="pFI-v6-VAo" customClass="Information" customModule="harit_thoriya_8953007_LAB5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rzT-QT-54f">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6XL-V9-xcv">
+                                <rect key="frame" x="10" y="91" width="370" height="719"/>
+                                <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">As our lives become more and more intertwined with technology, it's no surprise that many people are turning to apps to get their fix of stories. Whether it's a quick read on the bus or a longer, more immersive experience at home, there are now a wealth of apps out there that cater to our love of stories.
+
+The Imagistory app allows you to bring your child's imagination to life through creating and recording stories. The app provides wordless picture books, and it's up to you and the kids to create the story that goes with the pages. Record them and play them back over and over, or share them with family and friends!
+
+Level 1 stories are for 3 to 4 year old children while Level 2 story is for 5 to 10 year old children.</mutableString>
+                                <color key="textColor" red="0.2516182065" green="0.56395912169999995" blue="0.80787187810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SKQ-ph-pW8"/>
+                        <color key="backgroundColor" red="0.78530591729999999" green="0.90142947439999999" blue="0.93333923819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="SKQ-ph-pW8" firstAttribute="trailing" secondItem="6XL-V9-xcv" secondAttribute="trailing" constant="10" id="85X-A6-cbn"/>
+                            <constraint firstItem="6XL-V9-xcv" firstAttribute="top" secondItem="SKQ-ph-pW8" secondAttribute="top" id="9eQ-K6-125"/>
+                            <constraint firstItem="6XL-V9-xcv" firstAttribute="leading" secondItem="SKQ-ph-pW8" secondAttribute="leading" constant="10" id="TY0-d9-AMU"/>
+                            <constraint firstItem="SKQ-ph-pW8" firstAttribute="bottom" secondItem="6XL-V9-xcv" secondAttribute="bottom" id="ewR-Kh-AOO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Information" id="qBf-j4-pPq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHO-Ym-afZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="898"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Z9-sG-dLw">
+            <objects>
+                <navigationController id="hx4-0x-2ZJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="19d-TX-yr1">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.20538118480000001" green="0.46996724610000001" blue="0.96475249529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PKg-Gd-aKP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pj8-Ma-bcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Goldilocks" width="225" height="225"/>
+        <image name="Hickory Dickory Dock" width="225" height="225"/>
+        <image name="Image" width="930" height="697"/>
+        <image name="Night Boy" width="225" height="225"/>
+        <image name="StoryApp" width="1024" height="700"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

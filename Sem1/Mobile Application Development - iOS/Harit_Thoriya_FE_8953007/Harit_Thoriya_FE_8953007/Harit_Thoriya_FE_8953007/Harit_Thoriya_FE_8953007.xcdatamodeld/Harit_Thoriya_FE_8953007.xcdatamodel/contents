@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Direction" representedClassName=".Direction" parentEntity="Result" syncable="YES">
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="endPoint" optional="YES" attributeType="String"/>
+        <attribute name="startPoint" optional="YES" attributeType="String"/>
+        <attribute name="travelType" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="History" representedClassName=".History" syncable="YES">
+        <attribute name="dateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="historyId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="originSource" optional="YES" attributeType="String"/>
+        <attribute name="searchName" optional="YES" attributeType="String"/>
+        <relationship name="result" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Result"/>
+    </entity>
+    <entity name="News" representedClassName=".News" parentEntity="Result" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="discription" optional="YES" attributeType="String"/>
+        <attribute name="source" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Result" representedClassName=".Result" syncable="YES">
+        <attribute name="resultId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Weather" representedClassName=".Weather" parentEntity="Result" syncable="YES">
+        <attribute name="humidity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="temprature" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="weatherType" optional="YES" attributeType="String"/>
+        <attribute name="wind" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+</model>
