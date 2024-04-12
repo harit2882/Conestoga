@@ -1,0 +1,138 @@
+@page
+@model ItemsModel
+@{
+    ViewData["Title"] = "Item";
+}
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                word-wrap: break-word;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            .button {
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                background-color: white;
+                color: black;
+                border: 2px solid #04AA6D;
+            }
+            .button:hover {
+                background-color: #008CBA;;
+                color: white;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        <h1>Add Item</h1>
+
+        <!-- All Form Field -->
+        <form id="myForm" method="post" style="width: 50%;" >
+
+            <!-- Item Number -->
+            <div class="form-group">
+                <label asp-for="item.ItemNumber"></label>
+                <input asp-for="item.ItemNumber" class="form-control" type="text" required />
+                <span asp-validation-for="item.ItemNumber" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- Item Name -->
+            <div class="form-group">
+                <label asp-for="item.ItemName">Item Name</label>
+                <input asp-for="item.ItemName" class="form-control" type="text" required />
+                <span asp-validation-for="item.ItemName" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- Cost -->
+            <div class="form-group">
+                <label asp-for="item.Cost"></label>
+                <input asp-for="item.Cost" class="form-control" type="text" required />
+                <span asp-validation-for="item.Cost" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <!-- Quantity -->
+            <div class="form-group">
+                <label asp-for="item.Quantity"></label>
+                <input asp-for="item.Quantity" class="form-control" type="text" required />
+                <span asp-validation-for="item.Quantity" class="text-danger"></span>
+            </div>
+
+            <br>
+
+            <button type="button" onclick="submitForm()" class="btn btn-primary">Add Item</button>
+            
+        </form>
+
+        <br><br>
+
+        <!-- Save Button -->
+        <button type="submit" asp-handler="SaveItem" class="btn btn-primary">Save</button>
+
+        <br><br>
+
+        <div id="result" class="table">
+            @Html.Partial("ItemList", Model.itemList)       
+        </div>
+
+    <script>
+    function submitForm() {
+        // Serialize the form data
+        var formData = $("#myForm").serialize();
+
+        // Make an AJAX request
+        $.ajax({
+            type: "POST",
+            url: "/Items", // Use the correct URL for your page
+            data: formData,
+            success: function(response) {
+                // Update the result div with the response
+                $("#result").html(response);
+            },
+            error: function(error) {
+                console.log("Error:", error);
+            }
+        });
+    }
+    </script>
+
+    </body>
+</html>

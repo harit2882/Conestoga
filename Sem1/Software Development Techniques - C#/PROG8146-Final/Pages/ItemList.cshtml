@@ -1,0 +1,27 @@
+@model List<Item>
+
+<table>
+    <tr>
+        <th>Item Number</th>
+        <th>Item Name</th>
+        <th>Cost</th>
+        <th>Quantity</th>
+        <th>Delete</th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ItemNumber</td>
+                <td>@item.ItemName</td>
+                <td>@item.Cost</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr>No Item Found</tr>
+    }
+</table>

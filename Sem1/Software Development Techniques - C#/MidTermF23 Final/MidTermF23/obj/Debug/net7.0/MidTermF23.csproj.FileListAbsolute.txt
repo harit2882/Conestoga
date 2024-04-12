@@ -1,0 +1,14 @@
+C:\Users\thori\OneDrive\Desktop\MidTermF23\bin\Debug\net7.0\MidTermF23.exe
+C:\Users\thori\OneDrive\Desktop\MidTermF23\bin\Debug\net7.0\MidTermF23.deps.json
+C:\Users\thori\OneDrive\Desktop\MidTermF23\bin\Debug\net7.0\MidTermF23.runtimeconfig.json
+C:\Users\thori\OneDrive\Desktop\MidTermF23\bin\Debug\net7.0\MidTermF23.dll
+C:\Users\thori\OneDrive\Desktop\MidTermF23\bin\Debug\net7.0\MidTermF23.pdb
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\MidTermF23.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\MidTermF23.AssemblyInfoInputs.cache
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\MidTermF23.AssemblyInfo.cs
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\MidTermF23.csproj.CoreCompileInputs.cache
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\MidTermF23.dll
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\refint\MidTermF23.dll
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\MidTermF23.pdb
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\MidTermF23.genruntimeconfig.cache
+C:\Users\thori\OneDrive\Desktop\MidTermF23\obj\Debug\net7.0\ref\MidTermF23.dll
