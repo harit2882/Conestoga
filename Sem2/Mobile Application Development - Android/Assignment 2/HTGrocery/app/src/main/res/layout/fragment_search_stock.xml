@@ -15,7 +15,6 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             android:text="@string/search_a_item"
-            android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
         <com.google.android.material.textfield.TextInputLayout
@@ -25,14 +24,12 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
-            android:hint="@string/item_code"
-            android:textColorHint="@color/white">
+            android:hint="@string/item_code">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtItemCode"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white" />
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
         <LinearLayout
             android:layout_width="match_parent"

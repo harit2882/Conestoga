@@ -130,7 +130,7 @@ public class PurchaseFragment extends Fragment {
             return false;
         }
         if (binding.edtDateOfPurchase.length() == 0) {
-            binding.edtQtySold.setError("This Field is required");
+            binding.edtDateOfPurchase.setError("This Field is required");
             return false;
         }
         return true;

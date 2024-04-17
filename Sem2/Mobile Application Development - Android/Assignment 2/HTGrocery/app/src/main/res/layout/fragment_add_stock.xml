@@ -18,7 +18,6 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             android:text="@string/add_stock"
-            android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -29,14 +28,12 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
-            android:hint="@string/item_name"
-            android:textColorHint="@color/white">
+            android:hint="@string/item_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtItemName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white" />
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -46,14 +43,12 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
-            android:hint="@string/qty_in_stock"
-            android:textColorHint="@color/white">
+            android:hint="@string/qty_in_stock">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtQty"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white" />
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -63,15 +58,13 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
-            android:hint="@string/price"
-            android:textColorHint="@color/white">
+            android:hint="@string/price">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textColor="@color/white" />
+                android:inputType="number"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <RadioGroup
@@ -85,16 +78,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/taxable"
-                android:textColor="@color/white" />
+                android:text="@string/taxable"/>
 
             <RadioButton
                 android:id="@+id/radioNonTaxable"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/non_taxable"
-                android:textColor="@color/white" />
+                android:text="@string/non_taxable" />
 
         </RadioGroup>
 

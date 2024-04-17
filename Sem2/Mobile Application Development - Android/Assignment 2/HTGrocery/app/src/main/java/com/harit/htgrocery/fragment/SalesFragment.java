@@ -141,7 +141,7 @@ public class SalesFragment extends Fragment {
             return false;
         }
         if (binding.edtDateOfSale.length() == 0){
-            binding.edtQtySold.setError("This Field is required");
+            binding.edtDateOfSale.setError("This Field is required");
             return false;
         }
         return true;

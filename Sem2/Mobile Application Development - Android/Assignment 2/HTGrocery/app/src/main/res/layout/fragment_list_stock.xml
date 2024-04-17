@@ -16,7 +16,6 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             android:text="@string/list_of_items"
-            android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
 
