@@ -1,7 +1,7 @@
 package com.harit.htgrocery.model;
 
 public class Sales {
-    private int orderNumber; // Primary key, auto-generated
+    private int orderNumber;
     private int itemCode;
     private String customerName;
     private String customerEmail;

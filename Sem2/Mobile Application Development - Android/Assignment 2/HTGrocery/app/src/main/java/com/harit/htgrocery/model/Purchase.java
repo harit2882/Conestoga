@@ -1,7 +1,5 @@
 package com.harit.htgrocery.model;
 
-import java.util.Date;
-
 public class Purchase {
     private int invoiceNumber;
     private int itemCode;
