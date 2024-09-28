@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HaritAssignment1</string>
+    <string name="convert_now">Convert Now</string>
+    <string name="enter_temp">Enter temp</string>
+    <string name="converted_temperature">Converted Temperature</string>
+    <string name="tempconvert">TempConvert</string>
+    <string name="f">F</string>
+    <string name="c">C</string>
 </resources>
