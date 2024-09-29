@@ -1,9 +1,8 @@
 package com.example.haritassignment1;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -12,15 +11,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.haritassignment1.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    // MainActivity view binging variable
     private ActivityMainBinding binding;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
+        // binding variable with view
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -30,36 +31,14 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        binding.btnC.setOnClickListener(view -> {
+        // setting listeners
+        binding.btnC.setOnClickListener(this);
+        binding.btnF.setOnClickListener(this);
 
-            String fahrenheitString = binding.etvTempInput.getText().toString().trim();
-
-            if (validateTemperatureInput(fahrenheitString, false)) {
-                double fahrenheit = Double.parseDouble(fahrenheitString);
-
-                double celsius = (fahrenheit - 32) * 5 / 9;
-
-                binding.tvOutput.setText(String.format("%.2f", celsius));
-                binding.tvOutputUnit.setText("C");
-                binding.tvOutputUnit.setVisibility(View.VISIBLE);
-            }
-        });
-
-        binding.btnF.setOnClickListener(view -> {
-
-            String celsiusString = binding.etvTempInput.getText().toString();
-
-            if(validateTemperatureInput(celsiusString, true)){
-                double celsius = Double.parseDouble(celsiusString);
-                double fahrenheit = (celsius * 9 / 5) + 32;
-                binding.tvOutput.setText(String.format("%.2f", fahrenheit));
-                binding.tvOutputUnit.setText("F");
-                binding.tvOutputUnit.setVisibility(View.VISIBLE);
-            }
-        });
     }
 
 
+    // Validation function
     private boolean validateTemperatureInput(String temperatureString, boolean isCelsius) {
         boolean isError = false;
 
@@ -99,4 +78,51 @@ public class MainActivity extends AppCompatActivity {
         return !isError; // Return true if no errors
     }
 
+    @SuppressLint("DefaultLocale")
+    @Override
+    public void onClick(View view) {
+
+        // Click event for C button
+        if (view.getId() == binding.btnC.getId()){
+
+            // Extracting fahrenheit value from text view
+            String fahrenheitString = binding.etvTempInput.getText().toString().trim();
+
+            // Validation value of fahrenheit
+            if (validateTemperatureInput(fahrenheitString, false)) {
+
+                // Converting from string to double
+                double fahrenheit = Double.parseDouble(fahrenheitString);
+
+                // Login for converting to celsius
+                double celsius = (fahrenheit - 32) * 5 / 9;
+
+                // Setting the result to textview
+                binding.tvOutput.setText(String.format("%.2f", celsius));
+                binding.tvOutputUnit.setText("C");
+                binding.tvOutputUnit.setVisibility(View.VISIBLE);
+            }
+        }
+        // Click event for F button
+        else if (view.getId() == binding.btnF.getId()) {
+
+            // Extracting fahrenheit value from text view
+            String celsiusString = binding.etvTempInput.getText().toString();
+
+            // Validation value of celsius
+            if (validateTemperatureInput(celsiusString, true)) {
+
+                // Converting from string to double
+                double celsius = Double.parseDouble(celsiusString);
+
+                // Login for converting to fahrenheit
+                double fahrenheit = (celsius * 9 / 5) + 32;
+
+                // Setting the result to textview
+                binding.tvOutput.setText(String.format("%.2f", fahrenheit));
+                binding.tvOutputUnit.setText("F");
+                binding.tvOutputUnit.setVisibility(View.VISIBLE);
+            }
+        }
+    }
 }
